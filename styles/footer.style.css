@@ -1,0 +1,53 @@
+#footer {
+  background-image: linear-gradient(
+    60deg,
+    rgba(41, 50, 60, 1) 0%,
+    rgba(72, 85, 99, 1) 100%
+  );
+}
+
+#footer .footer {
+  min-height: 200px;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+#footer .brand h2 {
+  color: var(--light);
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#footer .social-icons {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#footer .social-item {
+  height: 50px;
+  width: 50px;
+  margin: 0 5px;
+}
+
+#footer .social-item img {
+  transition: 0.3s ease filter;
+  filter: grayscale(1);
+}
+
+#footer .social-item:hover img {
+  filter: grayscale(0);
+}
+
+#footer p {
+  color: var(--light);
+  font-size: 1.3rem;
+}
+
+#footer p a {
+  color: var(--light);
+}

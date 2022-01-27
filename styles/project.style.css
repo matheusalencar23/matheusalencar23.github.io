@@ -1,0 +1,130 @@
+/* Project section */
+#projects .projects {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+#projects .project-top h1 {
+  margin-bottom: 25px;
+}
+
+#projects .project-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#projects .project-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#projects .project-info {
+  padding: 30px;
+  background-image: linear-gradient(
+    60deg,
+    rgba(41, 50, 60, 1) 0%,
+    rgba(72, 85, 99, 1) 100%
+  );
+  color: var(--light);
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#projects .project-info h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+#projects .project-info h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+#projects .project-info p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+#projects .project-image {
+  height: 300px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+#projects .project-image::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    60deg,
+    rgba(41, 50, 60, 0.7) 0%,
+    rgba(72, 85, 99, 0.7) 100%
+  );
+}
+
+#projects .project-item:hover .project-image img {
+  transform: scale(1.1);
+}
+
+#projects .project-image img {
+  transition: transform ease 0.3s;
+}
+/* End project section */
+
+/* Media query for tablet */
+@media only screen and (min-width: 768px) {
+  #projects .project-item {
+    flex-direction: row;
+    height: 400px;
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  #projects .project-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  #projects .project-info {
+    height: 100%;
+    width: 50%;
+  }
+
+  #projects .project-image {
+    height: 100%;
+    width: 50%;
+  }
+}
+/* End media query for tablet */
+
+/* Media query for desktop */
+@media only screen and (min-width: 1200px) {
+  #projects .projects {
+    max-width: 100%;
+    width: 100vw;
+  }
+
+  #projects .project-bottom {
+    width: 100%;
+  }
+}
+/* End media query for desktop */
