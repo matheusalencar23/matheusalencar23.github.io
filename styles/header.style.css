@@ -35,7 +35,7 @@
   justify-content: center;
   cursor: pointer;
   transform: scale(0.8);
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 #header .hamburguer::after {
