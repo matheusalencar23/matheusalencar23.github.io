@@ -1,0 +1,136 @@
+.projects {
+  display: grid;
+  margin-bottom: 20px;
+  grid-template-columns: 1fr;
+  gap: 20px 0;
+}
+
+.project {
+  margin-bottom: 0;
+}
+
+.project h4 {
+  position: relative;
+  margin-left: 28px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-color);
+}
+
+.project h4:before {
+  position: absolute;
+  content: "";
+  background-image: url("../assets/folder.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  left: -28px;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: invert(55%) sepia(15%) saturate(583%) hue-rotate(209deg)
+    brightness(89%) contrast(88%);
+}
+
+.project p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-color);
+  margin-bottom: 24px;
+}
+
+.project__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project__info-star,
+.project__info-git,
+.project__info-lib {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--text-color);
+  position: relative;
+}
+
+.project__info-star,
+.project__info-git {
+  margin-left: 28px;
+}
+
+.project__info-star {
+  margin-right: 8px;
+}
+
+.project__info-star::before,
+.project__info-git::before {
+  position: absolute;
+  content: "";
+  background-image: url("../assets/star.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  left: -28px;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: invert(55%) sepia(15%) saturate(583%) hue-rotate(209deg)
+    brightness(89%) contrast(88%);
+}
+
+.project__info-git::before {
+  background-image: url("../assets/git-branch.svg");
+}
+
+.project__info-lib::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #E7DE79;
+  left: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid #837E9F;
+}
+
+.project__info-lib-ng::before {
+  background-color: #c04444fb;
+}
+
+.project__info-lib-rjs::before {
+  background-color: #4d4bd6fb;
+}
+
+@media screen and (min-width: 576px) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 20px 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
