@@ -107,6 +107,10 @@
   background-color: #4d4bd6fb;
 }
 
+.project__info-lib-html-css::before {
+  background-color: #f67b35e6;
+}
+
 @media screen and (min-width: 576px) {
   .projects {
     grid-template-columns: 1fr 1fr;
