@@ -45,7 +45,6 @@
   width: 100%;
   border-radius: 50%;
   border: 3px solid var(--light);
-  animation: hambuguerPulse 1s ease infinite;
 }
 
 #header .hamburguer .bar {
@@ -54,6 +53,7 @@
   position: relative;
   background-color: var(--light);
   z-index: -1;
+  transition: 0.3s ease;
 }
 
 #header .hamburguer .bar::after,
@@ -65,7 +65,7 @@
   background-color: var(--light);
   left: 0;
   transition: 0.3s ease;
-  transition-property: top, bottom;
+  transition-property: top, bottom, transform;
 }
 
 #header .hamburguer .bar::after {
@@ -76,12 +76,18 @@
   bottom: 8px;
 }
 
+#header .hamburguer.active .bar {
+  background-color: transparent;
+}
+
 #header .hamburguer.active .bar::before {
   bottom: 0;
+  transform: rotate(55deg);
 }
 
 #header .hamburguer.active .bar::after {
   top: 0;
+  transform: rotate(-55deg);
 }
 
 #header .navlist ul {
@@ -166,13 +172,3 @@
 }
 /* End media query for desktop */
 
-@keyframes hambuguerPulse {
-  0% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1.3);
-  }
-}
