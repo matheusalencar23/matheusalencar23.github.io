@@ -88,7 +88,7 @@ img {
 
 /* Media query for smartphone */
 @media only screen and (min-width: 576px) {
-  h1.section-title {
+  h2.section-title {
     font-size: 4rem;
   }
 }
@@ -101,7 +101,7 @@ img {
     padding: 20px 60px;
   }
 
-  h1.section-title {
+  h2.section-title {
     font-size: 6rem;
   }
 
