@@ -15,7 +15,7 @@
   width: 100%;
 }
 
-#about .right h2 {
+#about .right h3 {
   font-size: 1.8rem;
   font-weight: 500;
   letter-spacing: 0.2rem;
@@ -78,7 +78,7 @@
     padding: 30px;
   }
 
-  #about .right h1 {
+  #about .right h2 {
     text-align: left;
   }
 }
