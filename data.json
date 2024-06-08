@@ -21,5 +21,31 @@
         "imgAlt": "Logo do React"
       }
     ]
-  }
+  },
+  "projects": [
+    {
+      "name": "DDay",
+      "technology": "Angular",
+      "description": "Dashboard de um sistema de vendas. (Em construção...)",
+      "url": "https://gregarious-gumption-6b381c.netlify.app",
+      "imgUrl": "img/dday.png",
+      "imgAlt": "Imagem do projeto do DDay"
+    },
+    {
+      "name": "Food & Delivery",
+      "technology": "React",
+      "description": "Landing Page de um restaurante e delivery.",
+      "url": "https://gorgeous-praline-0f3a22.netlify.app/",
+      "imgUrl": "img/food-delivery.png",
+      "imgAlt": "Imagem do projeto Food Delivery"
+    },
+    {
+      "name": "Novos Projetos",
+      "technology": "*",
+      "description": "Em construção...",
+      "url": "",
+      "imgUrl": "img/img-1.jpg",
+      "imgAlt": "Imagem de projeto padrão em construção"
+    }
+  ]
 }
