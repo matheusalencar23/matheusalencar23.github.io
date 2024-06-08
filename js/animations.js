@@ -18,7 +18,7 @@ const animations = () => {
     }
   });
 
-  menuItem.each((item) => {
+  menuItem.each(() => {
     $(this).on("click", () => {
       hamburguer.classList.remove("active");
       mobileMenu.classList.remove("active");

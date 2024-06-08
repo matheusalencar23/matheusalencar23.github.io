@@ -1,5 +1,25 @@
 {
   "experiences": {
-    "text": "Veja um pouco sobre as tecnologias ferramentas que impulsionaram minha trajetória como programador. Desde linguagens de programação até frameworks e softwares especializados, cada ferramenta moldou minha habilidade técnica e minha abordagem criativa para resolver problemas complexos."
+    "text": "Veja um pouco sobre as tecnologias ferramentas que impulsionaram minha trajetória como programador. Desde linguagens de programação até frameworks e softwares especializados, cada ferramenta moldou minha habilidade técnica e minha abordagem criativa para resolver problemas complexos.",
+    "items": [
+      {
+        "title": "Desenvolvimento Front End",
+        "text": "O desenvolvimento front-end é minha principal afinidade. Trabalho na criação de interfaces que os usuários interagem, utilizando tecnologias como HTML, CSS, JavaScript e TypeScript. Cada projeto é uma oportunidade para combinar habilidades técnicas com criatividade, visando proporcionar a melhor experiência possível ao usuário final.",
+        "imgUrl": "https://img.icons8.com/fluency/96/000000/source-code.png",
+        "imgAlt": "Ícone representativo de programação"
+      },
+      {
+        "title": "Angular",
+        "text": "Angular é uma estrutura poderosa para desenvolvimento front-end, ideal para criar aplicativos da web dinâmicos e interativos. Com recursos avançados como vinculação de dados bidirecional e injeção de dependência, Angular permite construir interfaces robustas e escaláveis. Sua arquitetura modular e grande comunidade de desenvolvedores o tornam uma escolha popular para projetos de grande porte.",
+        "imgUrl": "https://img.icons8.com/?size=100&id=dSnah6CSCxRG&format=png&color=000000",
+        "imgAlt": "Logo do Angular"
+      },
+      {
+        "title": "React",
+        "text": "React é uma biblioteca JavaScript para construir interfaces de usuário interativas e reativas. Sua abordagem baseada em componentes permite o desenvolvimento modular e escalável de aplicativos da web. Com renderização eficiente do lado do cliente, React oferece uma experiência de usuário rápida e fluida, sendo uma escolha preferida para interfaces modernas e dinâmicas.",
+        "imgUrl": "https://img.icons8.com/color/144/000000/react-native.png",
+        "imgAlt": "Logo do React"
+      }
+    ]
   }
 }
